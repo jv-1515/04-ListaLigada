@@ -151,7 +151,17 @@ void excluirElemento()
 
 void buscarElemento()
 {
-
+	NO* pos = NULL;
+	int bus;
+	cout << "Digite um numero para buscar: ";
+	cin >> bus;
+	pos = posicaoElemento(bus);
+	if (pos == NULL) {
+		cout << "Elemento nao encontrado =(" << endl;
+	}
+	else {
+		cout << "Elemento encontrado =)" << endl;
+	}
 }
 
 
